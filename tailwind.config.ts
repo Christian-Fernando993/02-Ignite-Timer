@@ -35,6 +35,9 @@ const config: Config = {
       maxWidth: {
         grid: '74rem',
       },
+      fontFamily: {
+        'roboto-mono': ['Roboto Mono', 'sans-serif'],
+      },
     },
   },
   plugins: [],
