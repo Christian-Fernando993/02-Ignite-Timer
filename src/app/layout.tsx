@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/Components/Header'
+import { ContainerGrid } from '@/Components/Container'
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -19,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <ContainerGrid className={''}>
+          <Header />
+          {children}
+        </ContainerGrid>
+      </body>
     </html>
   )
 }
