@@ -11,7 +11,7 @@ export function Header() {
       <Image src={Logo} alt="" />
       <nav className="flex gap-2">
         <Link
-          href="/"
+          href="/Home"
           title="Timer"
           className="w-12 h-12 flex justify-center items-center text-gray-100 border-t-2 border-b-2 border-t-transparent border-b-transparent hover:border-b-[#00875F]"
         >
